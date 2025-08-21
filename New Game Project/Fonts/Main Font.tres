@@ -3,7 +3,7 @@
 [ext_resource path="res://Fonts/TheGreatestFont-Z7dl.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 128
+size = 256
 outline_size = 5
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 1 )
