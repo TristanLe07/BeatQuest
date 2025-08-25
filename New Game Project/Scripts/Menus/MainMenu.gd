@@ -7,7 +7,7 @@ func _on_PlayButton_pressed():
 
 
 func _on_SettingsButton_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://Scenes/Menus/Settings.tscn")
 
 
 func _on_ExitButton_pressed():
