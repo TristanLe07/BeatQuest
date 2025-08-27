@@ -1,0 +1,87 @@
+[gd_scene load_steps=7 format=3 uid="uid://d38xdytqkhyr0"]
+
+[ext_resource type="StyleBox" path="res://Styles/ButtonHover.tres" id="1"]
+[ext_resource type="FontFile" uid="uid://6g5eekgj131m" path="res://Fonts/TheGreatestFont-Z7dl.ttf" id="2"]
+[ext_resource type="StyleBox" path="res://Styles/ButtonNormal.tres" id="3"]
+[ext_resource type="StyleBox" path="res://Styles/ButtonPressed.tres" id="4"]
+[ext_resource type="Script" uid="uid://c8rjwn5ybhq8s" path="res://Scripts/Menus/MainMenu.gd" id="6"]
+[ext_resource type="LabelSettings" uid="uid://dboq1htnvl22b" path="res://Styles/LabelSettings.tres" id="6_mc63j"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6")
+
+[node name="Temporary Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.407843, 0.666667, 1, 1)
+
+[node name="Buttons" type="Node" parent="."]
+
+[node name="PlayButton" type="Button" parent="Buttons"]
+offset_left = 608.0
+offset_top = 384.0
+offset_right = 1312.0
+offset_bottom = 569.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/hover = ExtResource("1")
+theme_override_styles/pressed = ExtResource("4")
+theme_override_styles/normal = ExtResource("3")
+text = "PLAY"
+
+[node name="SettingsButton" type="Button" parent="Buttons"]
+offset_left = 608.0
+offset_top = 576.0
+offset_right = 1312.0
+offset_bottom = 760.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/hover = ExtResource("1")
+theme_override_styles/pressed = ExtResource("4")
+theme_override_styles/normal = ExtResource("3")
+text = "SETTINGS"
+
+[node name="ExitButton" type="Button" parent="Buttons"]
+offset_left = 608.0
+offset_top = 768.0
+offset_right = 1312.0
+offset_bottom = 953.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/hover = ExtResource("1")
+theme_override_styles/pressed = ExtResource("4")
+theme_override_styles/normal = ExtResource("3")
+text = "EXIT"
+
+[node name="Text" type="Node" parent="."]
+
+[node name="GameTitle" type="Label" parent="Text"]
+offset_left = 240.0
+offset_top = 88.0
+offset_right = 1677.0
+offset_bottom = 356.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 256
+text = "BEATQUEST"
+label_settings = ExtResource("6_mc63j")
+
+[node name="GameFooter" type="Label" parent="Text"]
+offset_left = 8.0
+offset_top = 952.0
+offset_right = 576.0
+offset_bottom = 1064.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 32
+text = "This game was made by Jayden Falcone & Tristan Le for 12.1 Computer Science"
+autowrap_mode = 2
+
+[connection signal="pressed" from="Buttons/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="Buttons/SettingsButton" to="." method="_on_SettingsButton_pressed"]
+[connection signal="pressed" from="Buttons/ExitButton" to="." method="_on_ExitButton_pressed"]

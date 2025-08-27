@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dboq1htnvl22b"]
+
+[ext_resource type="FontFile" uid="uid://6g5eekgj131m" path="res://Fonts/TheGreatestFont-Z7dl.ttf" id="1_uvps8"]
+
+[resource]
+font = ExtResource("1_uvps8")
+font_size = 256
+outline_size = 20
+outline_color = Color(0, 0, 0, 1)
