@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://c7bbmhyqcj2yv" path="res://Scripts/Menus/Settings.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://6g5eekgj131m" path="res://Fonts/TheGreatestFont-Z7dl.ttf" id="2"]
-[ext_resource type="StyleBox" path="res://Styles/ButtonHover.tres" id="3"]
-[ext_resource type="StyleBox" path="res://Styles/ButtonPressed.tres" id="4"]
+[ext_resource type="StyleBox" uid="uid://bjqhy4loxu6ew" path="res://Styles/ButtonHover.tres" id="3"]
+[ext_resource type="StyleBox" uid="uid://ckjnmj56p160c" path="res://Styles/ButtonPressed.tres" id="4"]
 [ext_resource type="StyleBox" uid="uid://cda561rjnpwog" path="res://Styles/Slider/Slider.tres" id="4_lc47o"]
 [ext_resource type="LabelSettings" uid="uid://dboq1htnvl22b" path="res://Styles/LabelSettings.tres" id="4_w1r47"]
-[ext_resource type="StyleBox" path="res://Styles/ButtonNormal.tres" id="5"]
+[ext_resource type="StyleBox" uid="uid://pqybsqs8n7r7" path="res://Styles/ButtonNormal.tres" id="5"]
 [ext_resource type="StyleBox" uid="uid://bqeg8pgk5ypql" path="res://Styles/Slider/Grabber Area.tres" id="5_01yro"]
 [ext_resource type="Script" uid="uid://dmh2kaexrmvol" path="res://Scripts/Menus/AudioSettings.gd" id="6"]
 
@@ -46,6 +46,7 @@ color = Color(0.407843, 0.666667, 1, 1)
 
 [node name="AudioSettings" type="Control" parent="."]
 layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource("6")

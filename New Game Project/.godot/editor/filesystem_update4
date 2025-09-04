@@ -1,5 +1,7 @@
 res://default_env.tres
-res://Scenes/Menus/MainMenu.tscn
-res://Styles/LabelSettings.tres
 res://Scenes/Menus/Settings.tscn
+res://Styles/ButtonNormal.tres
+res://Styles/ButtonPressed.tres
+res://Styles/LabelSettings.tres
 res://Styles/Slider/Slider.tres
+res://Styles/Slider/Grabber Area.tres

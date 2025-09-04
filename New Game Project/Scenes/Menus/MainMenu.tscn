@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://d38xdytqkhyr0"]
 
-[ext_resource type="StyleBox" path="res://Styles/ButtonHover.tres" id="1"]
+[ext_resource type="StyleBox" uid="uid://bjqhy4loxu6ew" path="res://Styles/ButtonHover.tres" id="1"]
 [ext_resource type="FontFile" uid="uid://6g5eekgj131m" path="res://Fonts/TheGreatestFont-Z7dl.ttf" id="2"]
-[ext_resource type="StyleBox" path="res://Styles/ButtonNormal.tres" id="3"]
-[ext_resource type="StyleBox" path="res://Styles/ButtonPressed.tres" id="4"]
+[ext_resource type="StyleBox" uid="uid://pqybsqs8n7r7" path="res://Styles/ButtonNormal.tres" id="3"]
+[ext_resource type="StyleBox" uid="uid://ckjnmj56p160c" path="res://Styles/ButtonPressed.tres" id="4"]
 [ext_resource type="Script" uid="uid://c8rjwn5ybhq8s" path="res://Scripts/Menus/MainMenu.gd" id="6"]
 [ext_resource type="LabelSettings" uid="uid://dboq1htnvl22b" path="res://Styles/LabelSettings.tres" id="6_mc63j"]
 
