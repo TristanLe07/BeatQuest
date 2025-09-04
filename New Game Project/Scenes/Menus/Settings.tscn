@@ -71,6 +71,7 @@ vertical_alignment = 1
 layout_mode = 2
 theme_override_styles/slider = ExtResource("4_lc47o")
 theme_override_styles/grabber_area = ExtResource("5_01yro")
+theme_override_styles/grabber_area_highlight = ExtResource("5_01yro")
 max_value = 1.0
 step = 0.05
 value = 0.5
@@ -88,6 +89,7 @@ vertical_alignment = 1
 layout_mode = 2
 theme_override_styles/slider = ExtResource("4_lc47o")
 theme_override_styles/grabber_area = ExtResource("5_01yro")
+theme_override_styles/grabber_area_highlight = ExtResource("5_01yro")
 max_value = 1.0
 step = 0.05
 
@@ -104,6 +106,7 @@ vertical_alignment = 1
 layout_mode = 2
 theme_override_styles/slider = ExtResource("4_lc47o")
 theme_override_styles/grabber_area = ExtResource("5_01yro")
+theme_override_styles/grabber_area_highlight = ExtResource("5_01yro")
 max_value = 1.0
 step = 0.05
 
