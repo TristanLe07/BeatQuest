@@ -1,0 +1,5 @@
+res://default_env.tres
+res://Scenes/Menus/MainMenu.tscn
+res://Styles/LabelSettings.tres
+res://Scenes/Menus/Settings.tscn
+res://Styles/Slider/Slider.tres
