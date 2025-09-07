@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bvrtj8tnmpmuv" path="res://Assets/tilesets/grass.png" id="2_l1hd3"]
 [ext_resource type="Texture2D" uid="uid://winfqxgnecw8" path="res://Assets/objects/objects.png" id="3_adcqc"]
 [ext_resource type="PackedScene" uid="uid://cthy1bmr42dfx" path="res://Scenes/Characters/player.tscn" id="4_7staa"]
-[ext_resource type="PackedScene" uid="uid://blnlaxs3g7638" path="res://Scenes/Characters/test_interaction.tscn" id="5_l1hd3"]
+[ext_resource type="PackedScene" uid="uid://ck2ewmfhmbleg" path="res://Scenes/Characters/TestNPC.tscn" id="5_l1hd3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcotr"]
 texture = ExtResource("1_vadfg")
@@ -100,9 +100,14 @@ layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(196611, 2, 5, 196614, 2, 5, 196617, 2, 5, 196620, 2, 5, 196623, 2, 5, 196626, 2, 5, 196629, 2, 5, 196632, 2, 5, 524291, 393218, 7, 524298, 393218, 7, 524303, 393218, 7, 524308, 393218, 7, 524312, 393218, 7, 458781, 393218, 7, 720923, 393218, 7, 786450, 393218, 7, 786443, 393218, 7, 786438, 393218, 7, 851971, 393218, 7, 1048575, 393218, 7, 1114128, 393218, 7, 983050, 393218, 7, 917526, 393218, 7, 720917, 524290, 6, 655376, 524290, 6, 589836, 524290, 6, 655368, 524290, 6, 524294, 524290, 6, 458765, 655362, 7, 393235, 655362, 7, 393224, 655362, 7, 458756, 655362, 7)
 
 [node name="Player" parent="." instance=ExtResource("4_7staa")]
+position = Vector2(800, 128)
 collision_layer = 2
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+limit_left = 0
+limit_top = 0
+editor_draw_limits = true
+metadata/_edit_group_ = true
 
-[node name="TestInteraction" parent="." instance=ExtResource("5_l1hd3")]
-position = Vector2(480, 96)
+[node name="StaticBody2D" parent="." instance=ExtResource("5_l1hd3")]
+position = Vector2(544, 160)

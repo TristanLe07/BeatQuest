@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://ck2ewmfhmbleg"]
+
+[ext_resource type="Script" uid="uid://c8i4rkgtoosct" path="res://Scripts/Characters/TestNPC.gd" id="1_dxmdq"]
+[ext_resource type="Texture2D" uid="uid://b4nhhpujbgk0b" path="res://icon.png" id="2_vyaop"]
+[ext_resource type="PackedScene" uid="uid://dwncgrn4ts8w" path="res://Scenes/World/Interaction/interactable.tscn" id="3_n80d4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_705g2"]
+size = Vector2(64, 64)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1y1wq"]
+radius = 152.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_dxmdq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_705g2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vyaop")
+
+[node name="Interactable" parent="." instance=ExtResource("3_n80d4")]
+interact_name = "E to Talk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+shape = SubResource("CircleShape2D_1y1wq")

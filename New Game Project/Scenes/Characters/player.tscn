@@ -1,7 +1,8 @@
-[gd_scene load_steps=41 format=3 uid="uid://cthy1bmr42dfx"]
+[gd_scene load_steps=42 format=3 uid="uid://cthy1bmr42dfx"]
 
 [ext_resource type="Texture2D" uid="uid://besoqpyt0rpbk" path="res://Assets/characters/player.png" id="1_3etf2"]
 [ext_resource type="Script" uid="uid://c8qxl5mls66pu" path="res://Scripts/Characters/player.gd" id="1_40svl"]
+[ext_resource type="PackedScene" uid="uid://ynhuhrcmgnbc" path="res://Scenes/World/Interaction/interacting_component.tscn" id="3_al8ar"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sgb3t"]
 radius = 8.0
@@ -306,3 +307,5 @@ scale = Vector2(1.33333, 1.33333)
 sprite_frames = SubResource("SpriteFrames_2davj")
 animation = &"walk_side"
 frame_progress = 0.610372
+
+[node name="InteractingComponent" parent="." instance=ExtResource("3_al8ar")]

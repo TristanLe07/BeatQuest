@@ -13,3 +13,8 @@ res://Scripts/Menus/InteractionManager.gd
 res://Scenes/World/interaction_area.tscn
 res://Scripts/Characters/TestNPC.gd
 res://Scenes/Characters/test_interaction.tscn
+res://Scenes/World/Interaction/interactable.tscn
+res://Scripts/world/Interactions/interactable.gd
+res://Scenes/World/Interaction/interacting_component.gd
+res://Scenes/World/Interaction/interacting_component.tscn
+res://Scenes/Characters/TestNPC.tscn
