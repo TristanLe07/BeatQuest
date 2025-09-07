@@ -1,7 +1,15 @@
 res://default_env.tres
-res://Scenes/Menus/Settings.tscn
+res://Scenes/Menus/MainMenu.tscn
 res://Styles/ButtonNormal.tres
 res://Styles/ButtonPressed.tres
 res://Styles/LabelSettings.tres
 res://Styles/Slider/Slider.tres
 res://Styles/Slider/Grabber Area.tres
+res://Scenes/Menus/Settings.tscn
+res://Scenes/Characters/player.tscn
+res://Scenes/World/world.tscn
+res://Scenes/Menus/InteractionManager.tscn
+res://Scripts/Menus/InteractionManager.gd
+res://Scenes/World/interaction_area.tscn
+res://Scripts/Characters/TestNPC.gd
+res://Scenes/Characters/test_interaction.tscn
