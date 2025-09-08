@@ -1,10 +1,12 @@
+res://Scripts/Global
+res://Scenes/World
+res://Styles/TileMap
+res://Scripts/world
+res://Assets/characters
 res://Scenes/Characters
 res://Scripts/Characters
 res://Scenes/World/Interaction
 res://Scripts/world/Interactions
-res://Scenes/World
 res://Scripts/Menus
 res://Scenes/Menus
-res://Scripts/world
-res://Assets/characters
 res://Styles/Slider

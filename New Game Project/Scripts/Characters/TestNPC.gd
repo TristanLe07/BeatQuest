@@ -3,6 +3,7 @@ extends StaticBody2D
 @onready var interactable: Area2D = $Interactable
 
 func _ready() -> void:
+	$AnimatedSprite2D.play("idle")
 	interactable.interact = _on_interact
 	
 func _on_interact():
