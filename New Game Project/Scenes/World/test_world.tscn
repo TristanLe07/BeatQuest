@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://4pifec1iny0h"]
+[gd_scene load_steps=4 format=3 uid="uid://diyflo12fkju3"]
 
-[ext_resource type="TileSet" uid="uid://beyc7jeqb3j7n" path="res://Styles/TileMap/world.tres" id="1_541ns"]
-[ext_resource type="PackedScene" uid="uid://c3ook7y64pb3u" path="res://Scenes/World/door.tscn" id="2_selge"]
+[ext_resource type="Script" uid="uid://d3iq7o6tlwqoy" path="res://Scenes/World/test_world.gd" id="1_u7hpt"]
+[ext_resource type="TileSet" uid="uid://beyc7jeqb3j7n" path="res://Styles/TileMap/world.tres" id="2_e2wq2"]
+[ext_resource type="PackedScene" uid="uid://cthy1bmr42dfx" path="res://Scenes/Characters/player.tscn" id="4_4ejcd"]
 
 [node name="TestLevel" type="Node2D"]
+script = ExtResource("1_u7hpt")
 
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
-tile_set = ExtResource("1_541ns")
+tile_set = ExtResource("2_e2wq2")
 format = 2
 layer_0/name = "Ground"
 layer_0/z_index = -1
@@ -16,17 +18,8 @@ layer_1/name = "Foliage"
 layer_1/y_sort_enabled = true
 layer_1/tile_data = PackedInt32Array(327690, 655362, 7, 327692, 655362, 7, 327694, 655362, 7, 327696, 655362, 7, 262154, 655362, 7, 196618, 655362, 7, 524298, 655362, 7, 524300, 655362, 7, 524302, 655362, 7, 524304, 655362, 7, 589834, 655362, 7, 655370, 655362, 7)
 
-[node name="Doors" type="Node" parent="."]
+[node name="Player" parent="." instance=ExtResource("4_4ejcd")]
+position = Vector2(88, 104)
 
-[node name="Door_E" parent="Doors" instance=ExtResource("2_selge")]
-destination_level_tag = "world"
-destination_door_tag = "W"
-spawn_direction = "left"
-
-[node name="CollisionShape2D" parent="Doors/Door_E" index="0"]
-position = Vector2(200, 112)
-
-[node name="Spawn" parent="Doors/Door_E" index="1"]
-position = Vector2(152, 112)
-
-[editable path="Doors/Door_E"]
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(3, 3)

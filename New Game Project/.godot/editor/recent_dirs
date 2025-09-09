@@ -1,7 +1,7 @@
-res://Scripts/Global
-res://Scenes/World
-res://Styles/TileMap
 res://Scripts/world
+res://Scenes/World
+res://Scripts/Global
+res://Styles/TileMap
 res://Assets/characters
 res://Scenes/Characters
 res://Scripts/Characters
