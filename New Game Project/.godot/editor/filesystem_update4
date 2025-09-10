@@ -1,22 +1,17 @@
 res://default_env.tres
-res://Scenes/World/room_2.tscn
+res://Scenes/Menus/MainMenu.tscn
 res://Styles/ButtonNormal.tres
 res://Styles/ButtonPressed.tres
 res://Styles/LabelSettings.tres
 res://Styles/Slider/Slider.tres
 res://Styles/Slider/Grabber Area.tres
 res://Styles/TileMap/world.tres
-res://Scenes/World/world.tscn
-res://Scripts/world/World.gd
-res://Scenes/Menus/MainMenu.tscn
 res://Scenes/Menus/Settings.tscn
+res://Scenes/World/world.tscn
+res://Scenes/World/room_2.tscn
 res://Scenes/Characters/player.tscn
-res://Scripts/Menus/MainMenu.gd
-res://Scripts/BattleScenes/main.gd
-res://Scenes/World/Interaction/interacting_component.gd
-res://Scenes/World/room_2.gd
 res://Scenes/Characters/TestNPC.tscn
 res://Scenes/World/Interaction/interactable.tscn
-res://Scripts/Global/global.gd
 res://Scenes/World/room_1.tscn
 res://Scenes/World/room_1.gd
+res://Scripts/Global/global.gd

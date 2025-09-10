@@ -1,36 +1,39 @@
 [gd_scene load_steps=13 format=3 uid="uid://ck2ewmfhmbleg"]
 
 [ext_resource type="Script" uid="uid://c8i4rkgtoosct" path="res://Scripts/Characters/TestNPC.gd" id="1_dxmdq"]
-[ext_resource type="Texture2D" uid="uid://besoqpyt0rpbk" path="res://Assets/characters/player.png" id="2_dxmdq"]
+[ext_resource type="Texture2D" uid="uid://blu2q83nxdfpf" path="res://Assets/characters/TestNPC.png" id="2_dxmdq"]
 [ext_resource type="PackedScene" uid="uid://dwncgrn4ts8w" path="res://Scenes/World/Interaction/interactable.tscn" id="3_n80d4"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_n80d4"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_vyaop"]
 atlas = ExtResource("2_dxmdq")
 region = Rect2(0, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_705g2"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_n80d4"]
 atlas = ExtResource("2_dxmdq")
 region = Rect2(48, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1y1wq"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_705g2"]
 atlas = ExtResource("2_dxmdq")
 region = Rect2(96, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lppgc"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1y1wq"]
 atlas = ExtResource("2_dxmdq")
 region = Rect2(144, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2d535"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_lppgc"]
 atlas = ExtResource("2_dxmdq")
 region = Rect2(192, 0, 48, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jjbnd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_2d535"]
 atlas = ExtResource("2_dxmdq")
 region = Rect2(240, 0, 48, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_alt43"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vyaop")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_n80d4")
 }, {
@@ -45,9 +48,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2d535")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jjbnd")
 }],
 "loop": true,
 "name": &"idle",

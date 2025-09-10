@@ -14,6 +14,7 @@ script = ExtResource("1_l1hd3")
 
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
+texture_filter = 1
 tile_set = ExtResource("1_vadfg")
 format = 2
 layer_0/name = "Ground"
