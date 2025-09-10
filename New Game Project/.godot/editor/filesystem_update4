@@ -1,5 +1,5 @@
 res://default_env.tres
-res://Scenes/World/room_2.tscn
+res://Scenes/World/room_1.tscn
 res://Styles/ButtonNormal.tres
 res://Styles/ButtonPressed.tres
 res://Styles/LabelSettings.tres
@@ -8,11 +8,10 @@ res://Styles/Slider/Grabber Area.tres
 res://Styles/TileMap/world.tres
 res://Scenes/Menus/MainMenu.tscn
 res://Scenes/Menus/Settings.tscn
-res://Scenes/World/world.tscn
+res://Scenes/World/room_2.tscn
 res://Scenes/Characters/player.tscn
 res://Scenes/Characters/TestNPC.tscn
 res://Scenes/World/Interaction/interactable.tscn
-res://Scenes/World/room_1.tscn
-res://Scripts/Global/global.gd
-res://Scenes/World/room_2.gd
+res://Scripts/audio_stream_player.gd
 res://Scripts/Menus/MainMenu.gd
+res://Scripts/audio_stream_player.tscn

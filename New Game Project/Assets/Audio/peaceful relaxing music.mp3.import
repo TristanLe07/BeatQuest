@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://brvveikv6jlur"
+path="res://.godot/imported/peaceful relaxing music.mp3-66b448ad058bde7f54e33555507f3878.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/peaceful relaxing music.mp3"
+dest_files=["res://.godot/imported/peaceful relaxing music.mp3-66b448ad058bde7f54e33555507f3878.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
