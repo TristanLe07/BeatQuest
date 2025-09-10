@@ -13,21 +13,22 @@ func _process(delta):
 	
 func change_scene():
 	if Global.transition_scene == true:
-		if Global.current_scene == "Room2":
+		if Global.current_scene == "world":
 			Global.finish_changescenes()
 			Global.game_first_loading = false
-			get_tree().change_scene_to_file("res://Scenes/World/room_1.tscn")
+			get_tree().change_scene_to_file("res://Scenes/World/room_2.tscn")
 
 
-func _on_area_2d_body_entered(body):
-	print("entered")
-	if body is Player:
-		print("entered")
-		Global.transition_scene = true
 
-
-func _on_area_2d_body_exited(body):
+func _on_room_2_entrance_body_exited(body):
 	print("exited")
 	if body is Player:
 		print("exited")
 		Global.transition_scene = false
+
+func _on_room_2_entrance_body_entered(body):
+	print("entered")
+	if body is Player:
+		print("entered")
+		Global.transition_scene = true
+		print(Global.transition_scene)

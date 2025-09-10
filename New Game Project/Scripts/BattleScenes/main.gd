@@ -1,5 +1,7 @@
 extends Node
 
+class_name main
+
 const CHARACTER_START_POSITION := Vector2i(150, 485)
 const CAM_START_POS := Vector2i(576, 324)
 

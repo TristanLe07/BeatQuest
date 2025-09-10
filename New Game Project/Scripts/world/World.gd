@@ -4,12 +4,16 @@ func _process(delta):
 	change_scene()
 
 func _on_room_2_entrance_body_entered(body):
-	if body.has_method("Player"):
+	print("entered1")
+	if body is Player:
+		print("entered2")
 		Global.transition_scene = true
 
 
 func _on_room_2_entrance_body_exited(body):
-	if body.has_method("Player"):
+	print("exited1")
+	if body is Player:
+		print("exited2")
 		Global.transition_scene = false
 
 func change_scene():
