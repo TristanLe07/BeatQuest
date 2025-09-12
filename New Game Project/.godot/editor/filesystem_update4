@@ -6,10 +6,16 @@ res://Styles/LabelSettings.tres
 res://Styles/Slider/Slider.tres
 res://Styles/Slider/Grabber Area.tres
 res://Styles/TileMap/world.tres
-res://Scripts/Menus/MainMenu.gd
 res://Scenes/Menus/Settings.tscn
 res://Scenes/World/room_2.tscn
 res://Scenes/Characters/player.tscn
 res://Scenes/Characters/TestNPC.tscn
 res://Scenes/World/Interaction/interactable.tscn
 res://Scenes/World/room_1.tscn
+res://Scripts/Global/global.gd
+res://Scripts/world/Cutscene/cutscene.gd
+res://Scenes/World/Cutscene/Cutscene.tscn
+res://Scripts/Menus/text_box.gd
+res://Scenes/World/text/text_box.tscn
+res://Scripts/Global/DialogueManager.gd
+res://Scripts/Characters/TestNPC.gd

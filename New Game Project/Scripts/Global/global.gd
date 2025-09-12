@@ -11,10 +11,8 @@ var player_start_posy = 56
 var game_first_loading = true
 
 func finish_changescenes():
-	print(transition_scene)
 	if transition_scene == true:
 		transition_scene = false
-		print(transition_scene)
 		if current_scene == "world":
 			current_scene = "Room2"
 		else:
