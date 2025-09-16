@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://30d4b73dmcfp"]
+
+[ext_resource type="Texture2D" uid="uid://bdev70lqww73h" path="res://Assets/Battle/arrows.png" id="1_x11lp"]
+[ext_resource type="Script" uid="uid://un71x8asci1i" path="res://Battle/key_listener.gd" id="2_x0euo"]
+
+[node name="KeyListener" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_x11lp")
+hframes = 4
+vframes = 3
+script = ExtResource("2_x0euo")
+
+[node name="RandomSpawnTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="RandomSpawnTimer" to="." method="_on_random_spawn_timer_timeout"]

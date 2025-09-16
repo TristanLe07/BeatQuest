@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7o7ka7urq0ok"]
+
+[ext_resource type="PackedScene" uid="uid://30d4b73dmcfp" path="res://Battle/KeyListener.tscn" id="1_vq2fc"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="KeyListener" parent="." instance=ExtResource("1_vq2fc")]
+position = Vector2(-160, 280)
+scale = Vector2(1.10345, 1)
+key_name = "Rhythm_Left"
+
+[node name="KeyListener2" parent="." instance=ExtResource("1_vq2fc")]
+position = Vector2(-64, 280)
+scale = Vector2(1.10345, 1)
+frame = 1
+key_name = "Rhythm_Down"
+
+[node name="KeyListener3" parent="." instance=ExtResource("1_vq2fc")]
+position = Vector2(64, 280)
+scale = Vector2(1.10345, 1)
+frame = 2
+key_name = "Rhythm_Up"
+
+[node name="KeyListener4" parent="." instance=ExtResource("1_vq2fc")]
+position = Vector2(160, 280)
+scale = Vector2(1.10345, 1)
+frame = 3
+key_name = "Rhythm_Right"
