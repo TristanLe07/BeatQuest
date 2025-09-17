@@ -5,9 +5,9 @@ res://Styles/LabelSettings.tres
 res://Styles/Slider/Slider.tres
 res://Styles/Slider/Grabber Area.tres
 res://Styles/TileMap/world.tres
-res://Battle/KeyListener.tscn
-res://Battle/GameLevel.tscn
 res://Battle/key_listener.gd
+res://Battle/GameUI.tscn
+res://Battle/BattleLevels/GameLevel.tscn
 res://Scenes/Menus/MainMenu.tscn
 res://Scenes/Menus/Settings.tscn
 res://Scenes/World/room_2.tscn
@@ -15,5 +15,11 @@ res://Scenes/Characters/player.tscn
 res://Scenes/Characters/TestNPC.tscn
 res://Scenes/World/room_1.tscn
 res://Scenes/World/text/text_box.tscn
+res://Battle/KeyListener.tscn
 res://Battle/falling_key.tscn
-res://Battle/falling_key.gd
+res://Battle/BattleLevels/GameUI.tscn
+res://Battle/signals.tscn
+res://Battle/signals.gd
+res://Battle/BattleLevels/game_ui.gd
+res://Battle/score_press_text.tscn
+res://Battle/score_press_text.gd

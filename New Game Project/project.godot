@@ -22,6 +22,7 @@ config/icon="res://Assets/icons/BEATQUEST LOGO.jpg"
 
 Global="*res://Scripts/Global/global.gd"
 DialogueManager="*res://Scripts/Global/DialogueManager.gd"
+Signals="*res://Battle/signals.gd"
 
 [display]
 
