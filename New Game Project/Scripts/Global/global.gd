@@ -2,6 +2,7 @@ extends Node
 
 var current_scene = "world" #MAIN AREA I THINK
 var transition_scene = false
+var current_level = "RHYTHM_HELL"
 
 var player_exit_main_posx = 16
 var player_exit_main_posy = 54

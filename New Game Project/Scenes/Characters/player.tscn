@@ -302,8 +302,8 @@ script = ExtResource("1_40svl")
 shape = SubResource("CapsuleShape2D_sgb3t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1.13687e-13, -16)
-scale = Vector2(1.33333, 1.33333)
+position = Vector2(-2.38419e-07, -24)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_2davj")
 animation = &"walk_side"
 frame_progress = 0.610372

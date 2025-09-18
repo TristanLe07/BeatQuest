@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=13 format=3 uid="uid://beyc7jeqb3j7n"]
+[gd_resource type="TileSet" load_steps=15 format=3 uid="uid://beyc7jeqb3j7n"]
 
 [ext_resource type="Texture2D" uid="uid://c68lg588av6tm" path="res://Assets/tilesets/plains.png" id="1_81dgv"]
 [ext_resource type="Texture2D" uid="uid://bvrtj8tnmpmuv" path="res://Assets/tilesets/grass.png" id="2_xk8e7"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c0mdvhot2leo8" path="res://Assets/tilesets/basement/cobbled_deepslate.png" id="4_un54n"]
 [ext_resource type="Texture2D" uid="uid://bu8ktfg06gd1n" path="res://Assets/tilesets/basement/dark_oak_log.png" id="5_oh8hb"]
 [ext_resource type="Texture2D" uid="uid://531vlyborg2t" path="res://Assets/tilesets/basement/dark_oak_planks.png" id="6_ryavt"]
+[ext_resource type="Texture2D" uid="uid://bwhmk2elt304i" path="res://Assets/tilesets/basement/red_wool.png" id="7_oh8hb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcotr"]
 texture = ExtResource("1_81dgv")
@@ -121,6 +122,10 @@ texture = ExtResource("5_oh8hb")
 texture = ExtResource("6_ryavt")
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ryavt"]
+texture = ExtResource("7_oh8hb")
+0:0/0 = 0
+
 [resource]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fcotr")
@@ -129,3 +134,4 @@ sources/2 = SubResource("TileSetAtlasSource_ugf0j")
 sources/3 = SubResource("TileSetAtlasSource_f5sr6")
 sources/4 = SubResource("TileSetAtlasSource_xvqd5")
 sources/5 = SubResource("TileSetAtlasSource_a0anw")
+sources/6 = SubResource("TileSetAtlasSource_ryavt")

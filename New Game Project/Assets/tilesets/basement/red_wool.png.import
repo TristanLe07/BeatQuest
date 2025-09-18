@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1e56iruoegy2"
-path="res://.godot/imported/fnf-daddy-dearest-stage-background.jpg-743e9bfff87837a394e95dfa52120c8e.ctex"
+uid="uid://bwhmk2elt304i"
+path="res://.godot/imported/red_wool.png-834c40986aef04f69494c86dfde58692.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Battle/art/fnf-daddy-dearest-stage-background.jpg"
-dest_files=["res://.godot/imported/fnf-daddy-dearest-stage-background.jpg-743e9bfff87837a394e95dfa52120c8e.ctex"]
+source_file="res://Assets/tilesets/basement/red_wool.png"
+dest_files=["res://.godot/imported/red_wool.png-834c40986aef04f69494c86dfde58692.ctex"]
 
 [params]
 

@@ -1,3 +1,5 @@
+res://Assets/characters
+res://Scripts/Characters
 res://Battle/objects
 res://Battle
 res://Scripts/Global
@@ -7,12 +9,10 @@ res://Scenes/World/Cutscene
 res://Scripts/world/Cutscene
 res://Assets/icons
 res://Scripts
-res://Assets/characters
 res://Scenes/World
 res://Scripts/world
 res://Styles/TileMap
 res://Scenes/Characters
-res://Scripts/Characters
 res://Scenes/World/Interaction
 res://Scripts/world/Interactions
 res://Scenes/Menus
