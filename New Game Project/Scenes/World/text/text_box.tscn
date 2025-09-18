@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://brfq4a2uqqp5s" path="res://Scripts/Menus/text_box.gd" id="1_o71gw"]
 [ext_resource type="Texture2D" uid="uid://b3as7y71pk4cb" path="res://Assets/icons/speech_box.png" id="2_t1agq"]
-[ext_resource type="FontFile" uid="uid://6g5eekgj131m" path="res://Fonts/TheGreatestFont-Z7dl.ttf" id="3_1e3dy"]
+[ext_resource type="FontFile" uid="uid://ud3all3x1xuy" path="res://Battle/art/Atop-R99O3.ttf" id="3_o71gw"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_nppnw"]
-font = ExtResource("3_1e3dy")
+[sub_resource type="LabelSettings" id="LabelSettings_t1agq"]
+font = ExtResource("3_o71gw")
 font_color = Color(0, 0, 0, 1)
 outline_color = Color(0, 0, 0, 1)
 
@@ -34,7 +34,7 @@ theme_override_constants/margin_bottom = 8
 [node name="Label" type="Label" parent="MarginContainer"]
 texture_filter = 1
 layout_mode = 2
-label_settings = SubResource("LabelSettings_nppnw")
+label_settings = SubResource("LabelSettings_t1agq")
 vertical_alignment = 1
 
 [node name="LetterDisplayTimer" type="Timer" parent="."]

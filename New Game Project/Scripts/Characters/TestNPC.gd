@@ -4,9 +4,9 @@ extends StaticBody2D
 
 const lines: Array[String] = [
 	"Whats goody gangsta!",
-	"This is a test for the dialogue system",
-	"If you're seeing this...",
-	"It works!"
+	"This game isnt finished",
+	"I have no idea what the dialogue will end up being",
+	"Anyways, after you read this and press enter you will be sent to the BATTLE ROOM... Good Luck!"
 ]
 
 func _ready() -> void:
@@ -16,3 +16,4 @@ func _ready() -> void:
 func _on_interact():
 	DialogueManager.start_display(global_position, lines)
 	await DialogueManager.dialog_finished
+	get_tree().change_scene_to_file("res://Battle/levels/game_level.tscn")
