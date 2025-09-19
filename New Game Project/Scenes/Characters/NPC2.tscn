@@ -1,0 +1,80 @@
+[gd_scene load_steps=13 format=3 uid="uid://ctaa418ow1i2o"]
+
+[ext_resource type="Script" uid="uid://c8i4rkgtoosct" path="res://Scripts/Characters/TestNPC.gd" id="1_yyjd5"]
+[ext_resource type="Texture2D" uid="uid://dfbkat5yxpvnf" path="res://Assets/characters/NPC2.png" id="2_yyjd5"]
+[ext_resource type="PackedScene" uid="uid://dwncgrn4ts8w" path="res://Scenes/World/Interaction/interactable.tscn" id="3_ljehl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wml85"]
+atlas = ExtResource("2_yyjd5")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljehl"]
+atlas = ExtResource("2_yyjd5")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2taq"]
+atlas = ExtResource("2_yyjd5")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_akwus"]
+atlas = ExtResource("2_yyjd5")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ec011"]
+atlas = ExtResource("2_yyjd5")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rypgh"]
+atlas = ExtResource("2_yyjd5")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_alt43"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wml85")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljehl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2taq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_akwus")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ec011")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rypgh")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vyaop"]
+height = 32.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1y1wq"]
+radius = 72.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_yyjd5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4.76837e-07, -16)
+scale = Vector2(1.66667, 1.66667)
+sprite_frames = SubResource("SpriteFrames_alt43")
+animation = &"idle"
+frame_progress = 0.692907
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_vyaop")
+
+[node name="Interactable" parent="." instance=ExtResource("3_ljehl")]
+interact_name = "E to Talk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+shape = SubResource("CircleShape2D_1y1wq")

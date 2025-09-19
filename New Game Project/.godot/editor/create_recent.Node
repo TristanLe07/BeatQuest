@@ -1,0 +1,15 @@
+Button
+Label
+ColorRect
+CollisionPolygon2D
+Polygon2D
+AudioStreamPlayer2D
+AnimationPlayer
+Sprite2D
+WorldEnvironment
+RichTextLabel
+CanvasLayer
+Timer
+Camera2D
+Node2D
+MarginContainer

@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://lrrpk0l4v708"]
+
+[ext_resource type="Script" uid="uid://brfq4a2uqqp5s" path="res://Scripts/Menus/text_box.gd" id="1_o71gw"]
+[ext_resource type="Texture2D" uid="uid://b3as7y71pk4cb" path="res://Assets/icons/speech_box.png" id="2_t1agq"]
+[ext_resource type="FontFile" uid="uid://ud3all3x1xuy" path="res://Battle/art/Atop-R99O3.ttf" id="3_o71gw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t1agq"]
+font = ExtResource("3_o71gw")
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[node name="TextBox" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_o71gw")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_t1agq")
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+texture_filter = 1
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+label_settings = SubResource("LabelSettings_t1agq")
+vertical_alignment = 1
+
+[node name="LetterDisplayTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="LetterDisplayTimer" to="." method="_on_letter_display_timer_timeout"]

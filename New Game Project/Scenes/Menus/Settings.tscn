@@ -1,0 +1,145 @@
+[gd_scene load_steps=12 format=3 uid="uid://dwswky0q47ibf"]
+
+[ext_resource type="Script" uid="uid://c7bbmhyqcj2yv" path="res://Scripts/Menus/Settings.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://6g5eekgj131m" path="res://Fonts/TheGreatestFont-Z7dl.ttf" id="2"]
+[ext_resource type="StyleBox" uid="uid://bjqhy4loxu6ew" path="res://Styles/ButtonHover.tres" id="3"]
+[ext_resource type="StyleBox" uid="uid://ckjnmj56p160c" path="res://Styles/ButtonPressed.tres" id="4"]
+[ext_resource type="StyleBox" uid="uid://cda561rjnpwog" path="res://Styles/Slider/Slider.tres" id="4_lc47o"]
+[ext_resource type="LabelSettings" uid="uid://dboq1htnvl22b" path="res://Styles/LabelSettings.tres" id="4_w1r47"]
+[ext_resource type="StyleBox" uid="uid://pqybsqs8n7r7" path="res://Styles/ButtonNormal.tres" id="5"]
+[ext_resource type="StyleBox" uid="uid://bqeg8pgk5ypql" path="res://Styles/Slider/Grabber Area.tres" id="5_01yro"]
+[ext_resource type="Script" uid="uid://dmh2kaexrmvol" path="res://Scripts/Menus/AudioSettings.gd" id="6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lc47o"]
+font = ExtResource("2")
+font_size = 64
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("2")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/64/0/ascent = 0.0
+cache/0/64/0/descent = 0.0
+cache/0/64/0/underline_position = 0.0
+cache/0/64/0/underline_thickness = 0.0
+cache/0/64/0/scale = 1.0
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.407843, 0.666667, 1, 1)
+
+[node name="AudioSettings" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AudioSettings"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 1024.0
+offset_bottom = 576.0
+alignment = 1
+
+[node name="Master2" type="Label" parent="AudioSettings/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 128
+text = "Master"
+label_settings = SubResource("LabelSettings_lc47o")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Master" type="HSlider" parent="AudioSettings/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/slider = ExtResource("4_lc47o")
+theme_override_styles/grabber_area = ExtResource("5_01yro")
+theme_override_styles/grabber_area_highlight = ExtResource("5_01yro")
+max_value = 1.0
+step = 0.05
+value = 0.5
+
+[node name="Music2" type="Label" parent="AudioSettings/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 128
+text = "Music"
+label_settings = SubResource("LabelSettings_lc47o")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Music" type="HSlider" parent="AudioSettings/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/slider = ExtResource("4_lc47o")
+theme_override_styles/grabber_area = ExtResource("5_01yro")
+theme_override_styles/grabber_area_highlight = ExtResource("5_01yro")
+max_value = 1.0
+step = 0.05
+
+[node name="SFX2" type="Label" parent="AudioSettings/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 128
+text = "SFX"
+label_settings = SubResource("LabelSettings_lc47o")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFX" type="HSlider" parent="AudioSettings/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/slider = ExtResource("4_lc47o")
+theme_override_styles/grabber_area = ExtResource("5_01yro")
+theme_override_styles/grabber_area_highlight = ExtResource("5_01yro")
+max_value = 1.0
+step = 0.05
+
+[node name="Settings" type="Label" parent="."]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 8.0
+offset_right = 872.0
+offset_bottom = 200.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 128
+text = "SETTINGS"
+label_settings = ExtResource("4_w1r47")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Confirm" type="Button" parent="."]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 536.0
+offset_right = 768.0
+offset_bottom = 618.0
+theme_override_fonts/font = SubResource("3")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("4")
+theme_override_styles/normal = ExtResource("5")
+text = "Confirm"
+
+[connection signal="mouse_exited" from="AudioSettings/VBoxContainer/Master" to="AudioSettings" method="_on_Master_mouse_exited"]
+[connection signal="mouse_exited" from="AudioSettings/VBoxContainer/Music" to="AudioSettings" method="_on_Music_mouse_exited"]
+[connection signal="mouse_exited" from="AudioSettings/VBoxContainer/SFX" to="AudioSettings" method="_on_SFX_mouse_exited"]
+[connection signal="pressed" from="Confirm" to="." method="_on_Confirm_pressed"]

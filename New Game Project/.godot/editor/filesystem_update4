@@ -1,0 +1,22 @@
+res://default_env.tres
+res://Battle/levels/game_level.tscn
+res://Styles/TileMap/world.tres
+res://Styles/ButtonNormal.tres
+res://Styles/ButtonPressed.tres
+res://Styles/LabelSettings.tres
+res://Styles/Slider/Slider.tres
+res://Styles/Slider/Grabber Area.tres
+res://Scenes/World/text/text_box.tscn
+res://Battle/levels/game_ui.tscn
+res://Scenes/Characters/player.tscn
+res://Scenes/World/Interaction/interacting_component.tscn
+res://Scenes/World/room_1.tscn
+res://Scenes/Characters/TestNPC.tscn
+res://Scenes/World/room_2.tscn
+res://Scenes/Characters/NPC2.tscn
+res://Battle/objects/level_editor.tscn
+res://Scenes/Menus/MainMenu.tscn
+res://Scenes/Menus/Settings.tscn
+res://Battle/objects/key_listener.gd
+res://Scripts/Menus/death_to_you.gd
+res://Scenes/Menus/death_to_you.tscn
