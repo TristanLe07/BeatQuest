@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjmr5ovmja1hu"]
+
+[ext_resource type="AudioStream" uid="uid://brvveikv6jlur" path="res://Assets/Audio/peaceful relaxing music.mp3" id="1_6suua"]
+[ext_resource type="Script" uid="uid://bw0db6qbj40mu" path="res://Scripts/Menus/audio_player.gd" id="1_n6yku"]
+
+[node name="audio_player" type="AudioStreamPlayer"]
+stream = ExtResource("1_6suua")
+bus = &"Music"
+script = ExtResource("1_n6yku")

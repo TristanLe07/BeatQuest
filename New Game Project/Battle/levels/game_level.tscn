@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8f1ign6hpicr"]
+[gd_scene load_steps=7 format=3 uid="uid://b8f1ign6hpicr"]
 
 [ext_resource type="PackedScene" uid="uid://dfdglmltorqae" path="res://Battle/objects/key_listener.tscn" id="1_h3xak"]
 [ext_resource type="Texture2D" uid="uid://bafivcah3vgox" path="res://Assets/Background/Sleepless Nights Wallpaper.png" id="1_lhato"]
 [ext_resource type="PackedScene" uid="uid://dpc13ucm0i8fg" path="res://Battle/levels/game_ui.tscn" id="2_l1p8s"]
 [ext_resource type="PackedScene" uid="uid://coqj034dvvbeu" path="res://Battle/objects/level_editor.tscn" id="4_1wrej"]
+[ext_resource type="PackedScene" uid="uid://bj5387o0qiobo" path="res://Scenes/Menus/pause.tscn" id="5_7hni0"]
 
 [sub_resource type="Environment" id="Environment_i5mjo"]
 background_mode = 3
@@ -12,13 +13,20 @@ glow_blend_mode = 1
 
 [node name="GameLevel" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="Background" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-6.10352e-05, 3.71933e-05)
 scale = Vector2(0.637037, 0.637037)
 texture = ExtResource("1_lhato")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Pause" parent="Camera2D" instance=ExtResource("5_7hni0")]
+visible = false
+offset_left = -556.0
+offset_top = -304.0
+offset_right = -556.0
+offset_bottom = -304.0
 
 [node name="KeyListener" parent="." instance=ExtResource("1_h3xak")]
 position = Vector2(-120, 280)

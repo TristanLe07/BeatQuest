@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://bj5387o0qiobo"]
+
+[ext_resource type="Script" uid="uid://bpjrb84ude3mq" path="res://Scripts/Menus/pause.gd" id="1_tuf0v"]
+[ext_resource type="FontFile" uid="uid://6g5eekgj131m" path="res://Fonts/TheGreatestFont-Z7dl.ttf" id="2_q2x24"]
+[ext_resource type="StyleBox" uid="uid://bjqhy4loxu6ew" path="res://Styles/ButtonHover.tres" id="3_w6od5"]
+[ext_resource type="StyleBox" uid="uid://ckjnmj56p160c" path="res://Styles/ButtonPressed.tres" id="4_1k7rx"]
+[ext_resource type="StyleBox" uid="uid://pqybsqs8n7r7" path="res://Styles/ButtonNormal.tres" id="5_mbuvn"]
+
+[node name="Pause" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1112.0
+offset_bottom = -608.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tuf0v")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1112.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.52549)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_right = 792.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ResumeBtn" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_q2x24")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = ExtResource("3_w6od5")
+theme_override_styles/pressed = ExtResource("4_1k7rx")
+theme_override_styles/normal = ExtResource("5_mbuvn")
+text = "Resume"
+
+[node name="MainMenuBtn" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_q2x24")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = ExtResource("3_w6od5")
+theme_override_styles/pressed = ExtResource("4_1k7rx")
+theme_override_styles/normal = ExtResource("5_mbuvn")
+text = "Main Menu"
+
+[connection signal="pressed" from="VBoxContainer/ResumeBtn" to="." method="pause_or_unpause"]
+[connection signal="pressed" from="VBoxContainer/MainMenuBtn" to="." method="_on_main_menu_btn_pressed"]

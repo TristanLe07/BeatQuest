@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d38xdytqkhyr0"]
+[gd_scene load_steps=8 format=3 uid="uid://d38xdytqkhyr0"]
 
 [ext_resource type="StyleBox" uid="uid://bjqhy4loxu6ew" path="res://Styles/ButtonHover.tres" id="1"]
 [ext_resource type="FontFile" uid="uid://6g5eekgj131m" path="res://Fonts/TheGreatestFont-Z7dl.ttf" id="2"]
@@ -6,6 +6,7 @@
 [ext_resource type="StyleBox" uid="uid://ckjnmj56p160c" path="res://Styles/ButtonPressed.tres" id="4"]
 [ext_resource type="Script" uid="uid://c8rjwn5ybhq8s" path="res://Scripts/Menus/MainMenu.gd" id="6"]
 [ext_resource type="LabelSettings" uid="uid://dboq1htnvl22b" path="res://Styles/LabelSettings.tres" id="6_mc63j"]
+[ext_resource type="AudioStream" uid="uid://brvveikv6jlur" path="res://Assets/Audio/peaceful relaxing music.mp3" id="7_q15nq"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -17,9 +18,12 @@ grow_vertical = 2
 script = ExtResource("6")
 
 [node name="Temporary Background" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.407843, 0.666667, 1, 1)
 
 [node name="Buttons" type="Node" parent="."]
@@ -79,9 +83,15 @@ offset_top = 576.0
 offset_right = 336.0
 offset_bottom = 636.0
 theme_override_fonts/font = ExtResource("2")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 19
 text = "This game was made by Jayden Falcone & Tristan Le for 12.1 Computer Science"
 autowrap_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_q15nq")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
 
 [connection signal="pressed" from="Buttons/PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="Buttons/SettingsButton" to="." method="_on_SettingsButton_pressed"]

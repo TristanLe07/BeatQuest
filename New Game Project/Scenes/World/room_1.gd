@@ -1,6 +1,6 @@
 extends Node2D
 
-func _ready():
+func _ready():	
 	if Global.game_first_loading == true:
 		$Player.position.x = Global.player_start_posx
 		$Player.position.y = Global.player_start_posy
@@ -17,8 +17,6 @@ func change_scene():
 			Global.game_first_loading = false
 			Global.finish_changescenes()
 			get_tree().change_scene_to_file("res://Scenes/World/room_2.tscn")
-
-
 
 func _on_room_2_entrance_body_exited(body):
 	if body is Player:

@@ -1,6 +1,6 @@
 extends Node2D
 #
-#func _ready():
+#func _ready():	
 	#if Global.game_first_loading == true:
 		#$Player.position.x = Global.player_start_posx
 		#$Player.position.y = Global.player_start_posy
